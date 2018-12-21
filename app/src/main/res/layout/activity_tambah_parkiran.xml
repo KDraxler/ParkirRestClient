@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ekoprass.parkirclient.TambahParkiran"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#c7f9e2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/kode_parkiran"
+            android:textSize="20sp"
+            app:fontFamily="@font/baumans"/>
+        <EditText
+            android:id="@+id/edtKode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/kode_parkiran"
+            app:fontFamily="@font/baumans"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_parkiran"
+            android:textSize="20sp"
+            app:fontFamily="@font/baumans"/>
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama"
+            app:fontFamily="@font/baumans"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/kapasitas"
+            android:textSize="20sp"
+            app:fontFamily="@font/baumans"/>
+
+        <EditText
+            android:id="@+id/edtKapasitas"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/kapasitas"
+            app:fontFamily="@font/baumans"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/baumans">
+
+        <Button
+            android:id="@+id/btTambah"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/tambah_parkiran"
+            android:textColor="#fff"
+            android:fontFamily="@font/baumans"/>
+
+        <Button
+            android:id="@+id/btBackGo"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDanger"
+            android:text="@string/kembali"
+            android:textColor="#fff"
+            android:fontFamily="@font/baumans"/>
+    </LinearLayout>
+</LinearLayout>
